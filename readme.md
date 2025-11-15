@@ -18,13 +18,20 @@ That's genuinely it. You'll learn the rest by doing.
 
 ## Python file structure
 
-- python -m venv venv
-- Now when you run `pip install`, it installs into *that* venv, not system-wide.
-- Then to install everything at once:
-- pip install -r requirements.txt
-- pip install requirements might fai; - check with cmd 'jupyter notebook'
-- if not working - pip install jupyter pandas numpy requests matplotlib seaborn
-- then cmd - jupyter notebook
+1. python -m venv venv
+   - if vsc asks "We noticed a new environment has been created. Do you want to select it for the workspace folder?" - select yes - this will use venv packages instead of system packages.
+     - if you miss this prompt you can still set the venv folder by:
+       - Press Ctrl+Shift+P (or Cmd+Shift+P on Mac)
+       - Select "Python: Select Interpreter"
+       - Choose your venv from the list (should show something like ./venv/bin/python)
+
+2. YOU MUST ACTIVATE THE NEW VENV - cmd `source venv/Scripts/activate`
+
+3. Now when you run `pip install`, it installs into *that* venv, not system-wide.
+   - Then to install everything at once:```pip install -r requirements.txt```
+   - Check with cmd `jupyter notebook`
+   - If not working:  ```pip install jupyter pandas numpy requests matplotlib seaborn```
+   - Then cmd: `jupyter notebook`
 
 ## NumPy: Raw numerical computing, blazingly fast math on arrays
 
