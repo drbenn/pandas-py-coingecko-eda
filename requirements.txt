@@ -4,3 +4,5 @@ jupyter
 requests
 matplotlib
 seaborn
+scikit-learn
+ta

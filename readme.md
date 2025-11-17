@@ -62,3 +62,13 @@ df = pd.DataFrame({
 df[df['age'] > 26]  # filter by condition
 df.groupby('age')['salary'].mean()  # group and aggregate
 ```
+
+## Phase 2 - Scikit-learn
+
+### Quick definitions
+
+- Classification - Predicting categories (e.g., "will Bitcoin go up or down?")
+- Regression - Predicting continuous numbers (e.g., "what will Bitcoin's price be?")
+- Clustering - Grouping similar data without labels (e.g., finding patterns in trading behavior)
+- Feature engineering - Transform raw data into useful predictors (technical indicators like SMA, EMA, RSI; price metrics like returns and volatility)
+- Model evaluation & comparison - Measure performance using metrics like accuracy, precision, recall, F1, ROC-AUC; compare which model works best
